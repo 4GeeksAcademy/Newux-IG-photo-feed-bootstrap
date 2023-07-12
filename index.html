@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Newux Bootstrap Project</title>
+    <!--font awesome link-->
+    <script src="https://kit.fontawesome.com/367b915930.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!---NAV BAR -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-1" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                    <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                </svg>
+                <span>Instagram</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Create a new post
+                            </button>
+                        </a>
+                    </li>
+                    <button type="button" class="btn btn-secondary justify-content-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link p-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                                <i class="fa-solid dropdown-toggle" style="color: #ffffff;"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item px-1" href="#">Action</a></li>
+                                <li><a class="dropdown-item px-1" href="#">Another action</a></li>
+                                <li><a class="dropdown-item px-1" href="#">Something else here</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Log out</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                </ul>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="message-text"></textarea>
+                                <div class="container d-flex justify-content-start">
+                                    <div class="icons border rounded px-2 m-1">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                    <div class="icons border rounded px-2 m-1">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success" data-bs-submit="modal">Publish</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </nav>
+
+    <!----view switch-->
+    <ul class="nav nav-pills d-flex justify-content-center mb-3 p-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-grid-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z" />
+                </svg>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-square-fill" viewBox="0 0 16 16">
+                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z" />
+                </svg>
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container">
+                <div class="row gx-0 row-cols-3">
+                    <img class="rounded-0"
+                        src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2021-10/211022-earl-west-sneakerhead-mn-1550-8152ef.jpg"
+                        alt="...">
+                    <img class="rounded-0"
+                        src="https://media.wired.com/photos/63728604691ed08cc4b98976/master/w_2560%2Cc_limit/Nike-Swoosh-News-Gear.jpg"
+                        alt="...">
+                    <img class="rounded-0"
+                        src="https://www.hollywoodreporter.com/wp-content/uploads/2023/01/3525-12D-TIF-RGB-801264-01_SP23_Project212_TM_Shot-12_038_main-H-2023.jpg?w=1296"
+                        alt="...">
+                    <img class="rounded-0"
+                        src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enCA/Images/ca-plp-iwp-shoes-running-sustain-nov24-fw22-d_tcm185-969594.png"
+                        alt="...">
+                    <img class="rounded-0"
+                        src="https://assets.adidas.com/images/w_600,f_auto,q_auto/59df56357bd44a3fab7faf8f007849d6_9366/adidas_4DFWD_2_Running_Shoes_White_HP7646_06_standard.jpg"
+                        alt="...">
+                    <img class="rounded-0" src="https://www.sportsdirect.com/images/imgzoom/21/21127902_xxl_a2.jpg"
+                        alt="...">
+                    <img class="rounded-0"
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/golden-goose-superstar-mixed-leather-low-top-sneakers.jpg?c=16x9&q=h_720,w_1280,c_fill/f_webp"
+                        alt="...">
+                    <img class="rounded-0"
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/210827133248-comfy-nike-waffle-one.jpg?q=x_0,y_0,h_956,w_1698,c_fill/h_720,w_1280/f_webp"
+                        alt="...">
+                    <img class="rounded-0"
+                        src="https://i0.wp.com/justfreshkicks.com/wp-content/uploads/2018/01/923096-101_A4_Pair_original.jpg?resize=640%2C380&ssl=1"
+                        alt="...">
+                    <img class="rounded-0"
+                        src="https://www.the-spin-off.com/news/media/5/Are-smart-sneakers-the-next-big-thing-47475-detailp.jpeg"
+                        alt="...">
+                    <img class="rounded-0"
+                        src="https://di2ponv0v5otw.cloudfront.net/posts/2022/02/02/61fafbfbcb692c14e594f430/m_61fafc10074d24fa006a04d2.jpg"
+                        alt="...">
+                    <img class="rounded-0"
+                        src="https://preview.free3d.com/img/2019/04/2188278836330759443/g99ya5fp-900.jpg" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="">
+                <div class="card mx-auto mt-5" style="width: 45rem;">
+                    <div class="header rounded-top d-flex justify-content-between">
+                        <div class="Heading ml-3 mt-2 ps-3">
+                            <h4 class="">New sneakers from a legit source, DM for prices!</h4>
+                        </div>
+                        <div class="date ml-3 mt-2 me-3">
+                            <h5 class="date text-secondary">06/23</h5>
+                        </div>
+                    </div>
+
+                    <img class="rounded-0"
+                        src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2021-10/211022-earl-west-sneakerhead-mn-1550-8152ef.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">888,999 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                    </div>
+                    <div class="footer d-flex bd-highlight mb-1">
+                        <div class="p-2 bd-highlight">
+                            <i class="fa-regular fa-heart mx-3"></i>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <p>Comment......</p>
+                        </div>
+                        <div class="ms-auto p-2 bd-highlight me-3">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card mx-auto mt-5" style="width: 45rem;">
+                    <div class="header rounded-top d-flex justify-content-between">
+                        <div class="Heading ml-3 mt-2 ps-3">
+                            <h4 class="">New sneakers from a legit source, DM for prices!</h4>
+                        </div>
+                        <div class="date ml-3 mt-2 me-3">
+                            <h5 class="date text-secondary">06/23</h5>
+                        </div>
+                    </div>
+
+                    <img class="rounded-0"
+                        src="https://media.wired.com/photos/63728604691ed08cc4b98976/master/w_2560%2Cc_limit/Nike-Swoosh-News-Gear.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">888,999 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                    </div>
+                    <div class="footer d-flex bd-highlight mb-1">
+                        <div class="p-2 bd-highlight">
+                            <i class="fa-regular fa-heart mx-3"></i>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <p>Comment......</p>
+                        </div>
+                        <div class="ms-auto p-2 bd-highlight me-3">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card mx-auto mt-5" style="width: 45rem;">
+                    <div class="header rounded-top d-flex justify-content-between">
+                        <div class="Heading ml-3 mt-2 ps-3">
+                            <h4 class="">New sneakers from a legit source, DM for prices!</h4>
+                        </div>
+                        <div class="date ml-3 mt-2 me-3">
+                            <h5 class="date text-secondary">06/23</h5>
+                        </div>
+                    </div>
+
+                    <img class="rounded-0"
+                        src="https://www.hollywoodreporter.com/wp-content/uploads/2023/01/3525-12D-TIF-RGB-801264-01_SP23_Project212_TM_Shot-12_038_main-H-2023.jpg?w=1296"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">888,999 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                    </div>
+                    <div class="footer d-flex bd-highlight mb-1">
+                        <div class="p-2 bd-highlight">
+                            <i class="fa-regular fa-heart mx-3"></i>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <p>Comment......</p>
+                        </div>
+                        <div class="ms-auto p-2 bd-highlight me-3">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card mx-auto mt-5" style="width: 45rem;">
+                    <div class="header rounded-top d-flex justify-content-between">
+                        <div class="Heading ml-3 mt-2 ps-3">
+                            <h4 class="">New sneakers from a legit source, DM for prices!</h4>
+                        </div>
+                        <div class="date ml-3 mt-2 me-3">
+                            <h5 class="date text-secondary">06/23</h5>
+                        </div>
+                    </div>
+
+                    <img class="rounded-0"
+                        src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enCA/Images/ca-plp-iwp-shoes-running-sustain-nov24-fw22-d_tcm185-969594.png"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">888,999 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                    </div>
+                    <div class="footer d-flex bd-highlight mb-1">
+                        <div class="p-2 bd-highlight">
+                            <i class="fa-regular fa-heart mx-3"></i>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <p>Comment......</p>
+                        </div>
+                        <div class="ms-auto p-2 bd-highlight me-3">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card mx-auto mt-5" style="width: 45rem;">
+                    <div class="header rounded-top d-flex justify-content-between">
+                        <div class="Heading ml-3 mt-2 ps-3">
+                            <h4 class="">New sneakers from a legit source, DM for prices!</h4>
+                        </div>
+                        <div class="date ml-3 mt-2 me-3">
+                            <h5 class="date text-secondary">06/23</h5>
+                        </div>
+                    </div>
+
+                    <img class="rounded-0"
+                        src="https://assets.adidas.com/images/w_600,f_auto,q_auto/59df56357bd44a3fab7faf8f007849d6_9366/adidas_4DFWD_2_Running_Shoes_White_HP7646_06_standard.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">888,999 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                    </div>
+                    <div class="footer d-flex bd-highlight mb-1">
+                        <div class="p-2 bd-highlight">
+                            <i class="fa-regular fa-heart mx-3"></i>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <p>Comment......</p>
+                        </div>
+                        <div class="ms-auto p-2 bd-highlight me-3">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card mx-auto mt-5" style="width: 45rem;">
+                    <div class="header rounded-top d-flex justify-content-between">
+                        <div class="Heading ml-3 mt-2 ps-3">
+                            <h4 class="">New sneakers from a legit source, DM for prices!</h4>
+                        </div>
+                        <div class="date ml-3 mt-2 me-3">
+                            <h5 class="date text-secondary">06/23</h5>
+                        </div>
+                    </div>
+
+                    <img class="rounded-0" src="https://www.sportsdirect.com/images/imgzoom/21/21127902_xxl_a2.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">888,999 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                    </div>
+                    <div class="footer d-flex bd-highlight mb-1">
+                        <div class="p-2 bd-highlight">
+                            <i class="fa-regular fa-heart mx-3"></i>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <p>Comment......</p>
+                        </div>
+                        <div class="ms-auto p-2 bd-highlight me-3">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card mx-auto mt-5" style="width: 45rem;">
+                    <div class="header rounded-top d-flex justify-content-between">
+                        <div class="Heading ml-3 mt-2 ps-3">
+                            <h4 class="">New sneakers from a legit source, DM for prices!</h4>
+                        </div>
+                        <div class="date ml-3 mt-2 me-3">
+                            <h5 class="date text-secondary">06/23</h5>
+                        </div>
+                    </div>
+
+                    <img class="rounded-0"
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/golden-goose-superstar-mixed-leather-low-top-sneakers.jpg?c=16x9&q=h_720,w_1280,c_fill/f_webp"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">888,999 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                    </div>
+                    <div class="footer d-flex bd-highlight mb-1">
+                        <div class="p-2 bd-highlight">
+                            <i class="fa-regular fa-heart mx-3"></i>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <p>Comment......</p>
+                        </div>
+                        <div class="ms-auto p-2 bd-highlight me-3">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card mx-auto mt-5" style="width: 45rem;">
+                    <div class="header rounded-top d-flex justify-content-between">
+                        <div class="Heading ml-3 mt-2 ps-3">
+                            <h4 class="">New sneakers from a legit source, DM for prices!</h4>
+                        </div>
+                        <div class="date ml-3 mt-2 me-3">
+                            <h5 class="date text-secondary">06/23</h5>
+                        </div>
+                    </div>
+
+                    <img class="rounded-0"
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/210827133248-comfy-nike-waffle-one.jpg?q=x_0,y_0,h_956,w_1698,c_fill/h_720,w_1280/f_webp"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">888,999 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                    </div>
+                    <div class="footer d-flex bd-highlight mb-1">
+                        <div class="p-2 bd-highlight">
+                            <i class="fa-regular fa-heart mx-3"></i>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <p>Comment......</p>
+                        </div>
+                        <div class="ms-auto p-2 bd-highlight me-3">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card mx-auto mt-5" style="width: 45rem;">
+                    <div class="header rounded-top d-flex justify-content-between">
+                        <div class="Heading ml-3 mt-2 ps-3">
+                            <h4 class="">New sneakers from a legit source, DM for prices!</h4>
+                        </div>
+                        <div class="date ml-3 mt-2 me-3">
+                            <h5 class="date text-secondary">06/23</h5>
+                        </div>
+                    </div>
+
+                    <img class="rounded-0"
+                        src="https://i0.wp.com/justfreshkicks.com/wp-content/uploads/2018/01/923096-101_A4_Pair_original.jpg?resize=640%2C380&ssl=1"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">888,999 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                    </div>
+                    <div class="footer d-flex bd-highlight mb-1">
+                        <div class="p-2 bd-highlight">
+                            <i class="fa-regular fa-heart mx-3"></i>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <p>Comment......</p>
+                        </div>
+                        <div class="ms-auto p-2 bd-highlight me-3">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card mx-auto mt-5" style="width: 45rem;">
+                    <div class="header rounded-top d-flex justify-content-between">
+                        <div class="Heading ml-3 mt-2 ps-3">
+                            <h4 class="">New sneakers from a legit source, DM for prices!</h4>
+                        </div>
+                        <div class="date ml-3 mt-2 me-3">
+                            <h5 class="date text-secondary">06/23</h5>
+                        </div>
+                    </div>
+
+                    <img class="rounded-0"
+                        src="https://www.the-spin-off.com/news/media/5/Are-smart-sneakers-the-next-big-thing-47475-detailp.jpeg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">888,999 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                    </div>
+                    <div class="footer d-flex bd-highlight mb-1">
+                        <div class="p-2 bd-highlight">
+                            <i class="fa-regular fa-heart mx-3"></i>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <p>Comment......</p>
+                        </div>
+                        <div class="ms-auto p-2 bd-highlight me-3">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card mx-auto mt-5" style="width: 45rem;">
+                    <div class="header rounded-top d-flex justify-content-between">
+                        <div class="Heading ml-3 mt-2 ps-3">
+                            <h4 class="">New sneakers from a legit source, DM for prices!</h4>
+                        </div>
+                        <div class="date ml-3 mt-2 me-3">
+                            <h5 class="date text-secondary">06/23</h5>
+                        </div>
+                    </div>
+
+                    <img class="rounded-0"
+                        src="https://di2ponv0v5otw.cloudfront.net/posts/2022/02/02/61fafbfbcb692c14e594f430/m_61fafc10074d24fa006a04d2.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">888,999 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                    </div>
+                    <div class="footer d-flex bd-highlight mb-1">
+                        <div class="p-2 bd-highlight">
+                            <i class="fa-regular fa-heart mx-3"></i>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <p>Comment......</p>
+                        </div>
+                        <div class="ms-auto p-2 bd-highlight me-3">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card mx-auto mt-5" style="width: 45rem;">
+                    <div class="header rounded-top d-flex justify-content-between">
+                        <div class="Heading ml-3 mt-2 ps-3">
+                            <h4 class="">New sneakers from a legit source, DM for prices!</h4>
+                        </div>
+                        <div class="date ml-3 mt-2 me-3">
+                            <h5 class="date text-secondary">06/23</h5>
+                        </div>
+                    </div>
+
+                    <img class="rounded-0"
+                        src="https://preview.free3d.com/img/2019/04/2188278836330759443/g99ya5fp-900.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">888,999 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                    </div>
+                    <div class="footer d-flex bd-highlight mb-1">
+                        <div class="p-2 bd-highlight">
+                            <i class="fa-regular fa-heart mx-3"></i>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <p>Comment......</p>
+                        </div>
+                        <div class="ms-auto p-2 bd-highlight me-3">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Popper.js, then Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+                integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+                integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
